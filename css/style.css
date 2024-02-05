@@ -490,12 +490,6 @@ ul {
   fill: #f4f4fd;
 }
 
-/* .subscribe-container {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-} */
-
 /*  */
 .form-footer {
   display: flex;
@@ -575,7 +569,8 @@ ul {
   opacity: 0;
   margin: 0;
   padding: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-open {
@@ -584,11 +579,12 @@ ul {
 
 .modal-content {
   position: absolute;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
@@ -597,7 +593,7 @@ ul {
     0px 2px 1px 0px #00000033;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  /* padding: 24px; */
 }
 
 .icon-cross-box {
@@ -614,7 +610,8 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-cross-box:active,
@@ -639,7 +636,7 @@ ul {
 }
 
 .modal-box {
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
 }
 
 .form-header {
@@ -655,13 +652,6 @@ ul {
 .form-box {
   margin-bottom: 8px;
 }
-
-/* .form-callback {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-start;
-} */
 
 .label-form {
   font-size: 12px;

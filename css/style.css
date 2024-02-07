@@ -690,9 +690,23 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-human {
+  height: 12px;
+  width: 12px;
+}
+
+.icon-phone {
+  height: 13px;
+  width: 13px;
+}
+
+.icon-mail {
+  height: 12px;
+  width: 15px;
+}
+
 .input-form:focus,
 .input-form:active {
-  /* outline: none; */
   border-color: #4d5ae5;
 }
 
